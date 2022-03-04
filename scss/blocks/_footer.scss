@@ -1,0 +1,241 @@
+#footer{
+    background-color: #191D28;
+    padding-top: 200px;
+    
+    
+}
+
+// footer site
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-site{
+    margin-top: 20px;
+    width: 25%;
+
+}
+
+.footer-site__description{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #CCCCCC;
+}
+
+.footer-site__links{
+    margin-top: 30px;
+}
+// .tw-icon{
+//     color: #76A713;
+// }
+.footer-site__link{
+    text-decoration: none;
+    color: #CCCCCC;
+    &:hover{
+        color: #76A713;
+    }
+}
+
+.footer-site__link + .footer-site__link{
+    margin-left: 30px;
+}
+
+
+// footer wrap
+
+.footer-wrap{
+    margin-left: 50px;
+}
+.footer-wrap__title{
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.footer-wrap__items{
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-wrap__item + .footer-wrap__item{
+    margin-top: 20px;
+}
+
+.footer-wrap__item{
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        background-image: url(/images/Ellipse.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 8px;
+        height: 8px;
+        left: -16px;
+        top: 4px;
+    }
+    
+}
+.footer-wrap__item__link{
+    text-decoration: none;
+    color: #CCCCCC;
+    &:hover{
+        color: #76A713;
+    }
+}
+
+
+
+// footer blog
+
+.footer-blog{
+    margin-left: 200px;
+    width: 30%;
+}
+.footer-blog__block{
+    display: flex;
+    margin-bottom: 14px;
+    
+}
+
+.footer-blog__img{
+    width: 80px;
+    height: 80px;
+}
+
+.footer-blog__title{
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.footer-blog__wrap{
+    margin-left: 14px;
+}
+.footer-blog__wrap__title{
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.footer-blog__wrap__description{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    color: #CCCCCC;
+}
+
+
+// footer info
+
+.footer-info{
+    width: 30%;
+}
+.footer-info__title{
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.footer-info__address{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 30px;
+    color: #CCCCCC;
+    position: relative;
+    
+    &::before{
+        position: absolute;
+        content: "";
+        background-image: url(/images/location.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 13px;
+        height: 15px;
+        left: -15px;
+        top: 3px;
+
+    }
+}
+
+.footer-info__tel{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #CCCCCC;
+    text-decoration: none;
+    position: relative;
+    
+    &::before{
+        position: absolute;
+        content: "";
+        background-image: url(/images/tel-befor.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 13px;
+        height: 15px;
+        left: -15px;
+        top: 3px;
+
+    }
+}
+
+.open-hours{
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.open-hours__desription{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #CCCCCC;
+}
+
+
+// footer bottom
+
+.footer-bottom{
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-bottom__cite{
+    display: flex;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #CCCCCC;
+    justify-content: center;
+    margin: 30px 0;
+}

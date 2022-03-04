@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3-uy ishi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <header id="site-header">
+    <div class="site-header__top container">
+
+      <address class="site-header__location">
+        <div class="site-header__location__address">15/A, Nest Tower, NYC</div>
+        <a class="site-header__location__link" href="mailto:info@webmail.com">info@webmail.com</a>
+      </address>
+
+      <div class="site-header__wrap">
+        <select class="site-header__wrap__lang">
+          <option value="eng" celected>English</option>
+          <option value="uzb">Uzbek</option>
+          <option value="ru">Rus</option>
+        </select>
+
+        <div class="site-header__images">
+          <svg class="site-header__image" xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13"
+            fill="#CCCCCC">
+            <path
+              d="M4.55 7.475H6.175L6.825 4.875H4.55V3.575C4.55 2.9055 4.55 2.275 5.85 2.275H6.825V0.0910001C6.6131 0.0630501 5.81295 0 4.96795 0C3.2032 0 1.95 1.07705 1.95 3.055V4.875H0V7.475H1.95V13H4.55V7.475Z" />
+          </svg>
+
+          <svg class="site-header__image" xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11"
+            fill="#76A713">
+            <path
+              d="M14.3536 1.30582C13.8469 1.52995 13.3096 1.67715 12.7594 1.74254C13.3393 1.39571 13.7734 0.849859 13.9806 0.206713C13.4364 0.530605 12.8397 0.757594 12.2178 0.880381C11.8001 0.433423 11.2464 0.136999 10.6428 0.037191C10.0392 -0.062617 9.41956 0.0397836 8.88018 0.328473C8.3408 0.617163 7.91191 1.07597 7.66018 1.63356C7.40845 2.19115 7.34799 2.81628 7.4882 3.41178C6.38452 3.35646 5.30481 3.06965 4.31917 2.56997C3.33352 2.07029 2.46399 1.3689 1.767 0.511357C1.52029 0.935104 1.39065 1.41681 1.39134 1.90714C1.39134 2.86953 1.88116 3.71974 2.62585 4.21752C2.18515 4.20365 1.75415 4.08464 1.36878 3.8704V3.90492C1.36891 4.54586 1.5907 5.16704 1.99655 5.66313C2.40239 6.15922 2.96731 6.49968 3.59553 6.6268C3.18643 6.73766 2.75746 6.754 2.34111 6.67459C2.51824 7.22629 2.86346 7.70878 3.32845 8.05452C3.79343 8.40025 4.3549 8.59191 4.93424 8.60267C4.35845 9.05487 3.69919 9.38916 2.99413 9.5864C2.28907 9.78365 1.55204 9.84 0.825195 9.75222C2.09401 10.5682 3.57104 11.0014 5.07959 11C10.1855 11 12.9778 6.77016 12.9778 3.10182C12.9778 2.98236 12.9744 2.86156 12.9691 2.74342C13.5126 2.35061 13.9817 1.86401 14.3543 1.30648L14.3536 1.30582Z" />
+          </svg>
+
+          <svg class="site-header__image" xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13"
+            fill="#CCCCCC">
+            <path
+              d="M6.85449 0C8.62054 0 8.84089 0.00649996 9.53379 0.039C10.226 0.0715 10.6973 0.18005 11.112 0.34125C11.541 0.50635 11.9024 0.72995 12.2638 1.0907C12.5943 1.41563 12.8501 1.80868 13.0132 2.2425C13.1738 2.65655 13.283 3.12845 13.3155 3.8207C13.346 4.5136 13.3545 4.73395 13.3545 6.5C13.3545 8.26605 13.348 8.4864 13.3155 9.1793C13.283 9.87155 13.1738 10.3428 13.0132 10.7575C12.8505 11.1916 12.5947 11.5847 12.2638 11.9093C11.9388 12.2397 11.5457 12.4954 11.112 12.6587C10.6979 12.8193 10.226 12.9285 9.53379 12.961C8.84089 12.9915 8.62054 13 6.85449 13C5.08844 13 4.86809 12.9935 4.17519 12.961C3.48294 12.9285 3.01169 12.8193 2.59699 12.6587C2.163 12.4959 1.76988 12.2401 1.44519 11.9093C1.11461 11.5844 0.858848 11.1914 0.695742 10.7575C0.534542 10.3434 0.425992 9.87155 0.393492 9.1793C0.362942 8.4864 0.354492 8.26605 0.354492 6.5C0.354492 4.73395 0.360992 4.5136 0.393492 3.8207C0.425992 3.1278 0.534542 2.6572 0.695742 2.2425C0.858396 1.80842 1.11421 1.41526 1.44519 1.0907C1.76998 0.76 2.16307 0.504224 2.59699 0.34125C3.01169 0.18005 3.48229 0.0715 4.17519 0.039C4.86809 0.00844996 5.08844 0 6.85449 0ZM6.85449 3.25C5.99254 3.25 5.16589 3.59241 4.5564 4.2019C3.9469 4.8114 3.60449 5.63805 3.60449 6.5C3.60449 7.36195 3.9469 8.1886 4.5564 8.7981C5.16589 9.40759 5.99254 9.75 6.85449 9.75C7.71645 9.75 8.5431 9.40759 9.15259 8.7981C9.76208 8.1886 10.1045 7.36195 10.1045 6.5C10.1045 5.63805 9.76208 4.8114 9.15259 4.2019C8.5431 3.59241 7.71645 3.25 6.85449 3.25ZM11.0795 3.0875C11.0795 2.87201 10.9939 2.66535 10.8415 2.51298C10.6891 2.3606 10.4825 2.275 10.267 2.275C10.0515 2.275 9.84484 2.3606 9.69247 2.51298C9.54009 2.66535 9.45449 2.87201 9.45449 3.0875C9.45449 3.30299 9.54009 3.50965 9.69247 3.66202C9.84484 3.8144 10.0515 3.9 10.267 3.9C10.4825 3.9 10.6891 3.8144 10.8415 3.66202C10.9939 3.50965 11.0795 3.30299 11.0795 3.0875ZM6.85449 4.55C7.37166 4.55 7.86765 4.75545 8.23335 5.12114C8.59905 5.48684 8.80449 5.98283 8.80449 6.5C8.80449 7.01717 8.59905 7.51316 8.23335 7.87886C7.86765 8.24455 7.37166 8.45 6.85449 8.45C6.33732 8.45 5.84133 8.24455 5.47563 7.87886C5.10994 7.51316 4.90449 7.01717 4.90449 6.5C4.90449 5.98283 5.10994 5.48684 5.47563 5.12114C5.84133 4.75545 6.33732 4.55 6.85449 4.55Z" />
+          </svg>
+
+          <svg class="site-header__image" xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 15 13"
+            fill="#CCCCCC">
+            <path
+              d="M3.24322 1.44509C3.24303 1.82816 3.09067 2.19546 2.81967 2.46619C2.54866 2.73693 2.1812 2.88892 1.79813 2.88873C1.41507 2.88854 1.04776 2.73618 0.777026 2.46517C0.506291 2.19417 0.354301 1.82671 0.354492 1.44364C0.354684 1.06057 0.507041 0.693269 0.778047 0.422534C1.04905 0.151798 1.41651 -0.000191354 1.79958 1.80807e-07C2.18265 0.000191715 2.54995 0.152549 2.82069 0.423555C3.09142 0.694562 3.24341 1.06202 3.24322 1.44509ZM3.28655 3.95828H0.397823V13H3.28655V3.95828ZM7.85074 3.95828H4.97646V13H7.82186V8.25526C7.82186 5.61208 11.2667 5.36654 11.2667 8.25526V13H14.1193V7.2731C14.1193 2.81723 9.02068 2.98333 7.82186 5.17155L7.85074 3.95828Z" />
+          </svg>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <div class="site-header__bottom">
+      <div class="container">
+        <div class="site-header__bottom__wrap">
+          <img class="site-header__bottom__logo logo" src="/images/logo.png" alt="logo site">
+
+          <nav class="site-header__items">
+            <a class="site-header__item site-header__item--active">Home +</a>
+            <a class="site-header__item">About +</a>
+            <a class="site-header__item">Shop +</a>
+            <a class="site-header__item">Page +</a>
+            <a class="site-header__item">Contact</a>
+          </nav>
+
+          <a class="site-header__login login" href="#">Login</a>
+
+          <button class="search__btn"><span class="visually-hidden">Search</span>
+            <img src="/images/search.png" alt="">
+          </button>
+
+          <button class="basket">
+            <span class="visually-hidden">Basket</span>
+            <img class="basket__img" src="/images/korzinka.png" alt="">
+            <span class=""></span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- finish header -->
+
+  <section id="hero">
+    <div class="container">
+      <div class="hero">
+        <div class="hero__wrapper">
+          <p class="hero__wrapper__description">body needs</p>
+          <h1 class="hero__wrapper__title">organic food good health</h1>
+          <button class="hero__wrapper__btn">SHOP NOW</button>
+        </div>
+
+        <img src="/images/hero-image.png" alt="">
+
+        <button class="control-left__btn">
+          <img src="/images/control-left.png" alt="">
+        </button>
+  
+        <button class="control-right__btn">
+          <img src="/images/control-right.png" alt="">
+        </button>
+      </div>
+
+      
+    </div>
+
+  </section>
+
+  <!-- finish hero -->
+
+  <section id="organic">
+    <div class="container">
+      <div class="organic__intro">
+        <ul class="organic__intro__items">
+
+          <li class="organic__intro__item">
+            <h3 class="organic__intro__title">Free Shipping</h3>
+            <p class="organic__intro__description">On all orders over $35.00</p>
+
+          </li>
+
+          <li class="organic__intro__item">
+            <h3 class="organic__intro__title">15 day returns</h3>
+            <p class="organic__intro__description">Moneyback guarantee</p>
+
+          </li>
+
+          <li class="organic__intro__item">
+            <h3 class="organic__intro__title">Fresh product</h3>
+            <p class="organic__intro__description">Best online organic food</p>
+
+          </li>
+
+          <li class="organic__intro__item">
+            <h3 class="organic__intro__title">Summer offer</h3>
+            <p class="organic__intro__description">On all orders over</p>
+
+          </li>
+
+        </ul>
+
+      </div>
+      <div class="organic__wrap">
+        <img class="organic__wrap__image" src="/images/organic-left .png" alt="">
+        <div class="organic__wrap__intro">
+          <img class="organic__wrap__intro__img" src="/images/organic-right.png" alt="">
+
+          <p class="organic__wrap__into__text">15+ Years Experience</p>
+
+        </div>
+
+        <div class="organic__wrap__hero">
+          <h2 class="organic__wrap__hero__title">High quality organic food store</h2>
+          <p class="organic__wrap__hero__description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged.
+          </p>
+
+          <blockquote class="organic__wrap__hero__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+          </blockquote>
+
+          <strong class="organic__wrap__hero__strong">Hasan Mahmud</strong>
+
+          <p class="organic__wrap__hero__substrong">Shop Director</p>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- finish organic -->
+
+  <section id="wrapper">
+    <div class="container">
+      <ul class="wrapper__items">
+
+        <li class="wrapper__item wrapper-hero">
+          <img class="wrapper__item__img" src="/images/wrapper.png" alt="">
+          <h3 class="wrapper__item__title wrapper-hero__title">Vegetables</h3>
+          <p class="wrapper__item__description">
+            Purchasing from select family farmers who farm onganically.
+          </p>
+
+          <button class="wrapper-hero__btn" type="submit">SHOP NOW</button>
+        </li>
+
+        <li class="wrapper__item">
+          <img src="/images/wrapper2.png" alt="">
+          <h3 class="wrapper__item__title">Fresh Fruits</h3>
+          <p class="wrapper__item__description">
+            Purchasing from select family farmers who farm onganically.
+          </p>
+
+          <button class="wrapper__item__button">
+            <img src="/images/Vector.png" alt="">
+          </button>
+        </li>
+
+        <li class="wrapper__item">
+          <img src="/images/wrapper3.png" alt="">
+          <h3 class="wrapper__item__title">Eggpent</h3>
+          <p class="wrapper__item__description">
+            Purchasing from select family farmers who farm onganically.
+          </p>
+
+          <button class="wrapper__item__button">
+            <img src="/images/Vector.png" alt="">
+          </button>
+
+        </li>
+
+        <li class="wrapper__item">
+          <img src="/images/wrapper4.png" alt="">
+          <h3 class="wrapper__item__title">Tomato</h3>
+          <p class="wrapper__item__description">
+            Purchasing from select family farmers who farm onganically.
+          </p>
+
+          <button class="wrapper__item__button">
+            <img src="/images/Vector.png" alt="">
+          </button>
+        </li>
+
+      </ul>
+    </div>
+
+
+  </section>
+
+  <!-- finish wrapper -->
+
+  <section id="products">
+    <div class="container">
+      <h2 class="products__title">popular Products</h2>
+
+      <ul class="products__items">
+        <li class="products__item">
+          <a class="products__item__link products__item__link--active" href="#">All</a>
+        </li>
+        <li class="products__item">
+          <a class="products__item__link" href="#">Food</a>
+        </li>
+        <li class="products__item">
+          <a class="products__item__link" href="#">Organic</a>
+        </li>
+        <li class="products__item">
+          <a class="products__item__link" href="#">Fruits</a>
+        </li>
+        <li class="products__item">
+          <a class="products__item__link" href="#">Health</a>
+        </li>
+        <li class="products__item">
+          <a class="products__item__link" href="#">Seafood</a>
+        </li>
+      </ul>
+
+      <div class="products-wrap">
+        <div class="products-wrap__wrapper">
+          <img class="products-wrap__wrapper__image wrapper-image" src="/images/Blackberry-Fruit.png" alt="">
+
+          <div class="products__button">
+            <button class="button">
+              <i class="fa-regular fa-retweet"></i>
+            </button>
+            <button class="button">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <button class="button">
+              <i class="fa-regular fa-retweet"></i>
+            </button>
+
+          </div>
+
+          <div class="products-wrap__wrapper__block">
+            <h3 class="products-wrap__wrapper__title">Blackberry Fruit</h3>
+            <p class="products-wrap__wrapper__description">$10.00 - $20.00</p>
+
+
+
+            <div class="button-star">
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+
+            </div>
+
+            <button class="products__btn" type="submit">SHOP NOW</button>
+          </div>
+
+        </div>
+
+        <div class="products-wrap__wrapper">
+          <img class="products-wrap__wrapper__image" src="/images/Avocado-Fruit.png" alt="">
+
+          <div class="products-wrap__wrapper__block">
+            <h3 class="products-wrap__wrapper__title"> Avocado Fruit</h3>
+            <p class="products-wrap__wrapper__description">
+              <strike class="strike">$30.00</strike> - $15.00
+            </p>
+
+            <div class="button-star">
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-regular fa-star"></i>
+              </button>
+
+            </div>
+            <button class="products__btn" type="submit">SHOP NOW</button>
+          </div>
+
+        </div>
+
+        <div class="products-wrap__wrapper">
+          <img class="products-wrap__wrapper__image" src="/images/Kiwifruit-Vitamin.png" alt="">
+
+          <div class="products-wrap__wrapper__block">
+            <h3 class="products-wrap__wrapper__title">Kiwifruit Vitamin</h3>
+            <p class="products-wrap__wrapper__description">$17.00</p>
+
+            <div class="button-star">
+
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+
+            </div>
+
+            <button class="products__btn" type="submit">SHOP NOW</button>
+          </div>
+
+        </div>
+
+
+
+
+
+        <div class="products-wrap__wrapper">
+          <img class="products-wrap__wrapper__image" src="/images/Lemon.png" alt="">
+          <div class="products-wrap__wrapper__block">
+            <h3 class="products-wrap__wrapper__title">Lemon</h3>
+            <p class="products-wrap__wrapper__description">$7.00</p>
+
+            <div class="button-star">
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+
+            </div>
+            <button class="products__btn" type="submit">SHOP NOW</button>
+          </div>
+
+        </div>
+
+        <div class="products-wrap__wrapper">
+          <img class="products-wrap__wrapper__image" src="/images/Purple-onion.png" alt="">
+          <div class="products-wrap__wrapper__block">
+            <h3 class="products-wrap__wrapper__title">Purple onion</h3>
+            <p class="products-wrap__wrapper__description">$30.00</p>
+
+            <div class="button-star">
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+            </div>
+
+            <button class="products__btn" type="submit">SHOP NOW</button>
+          </div>
+
+        </div>
+
+        <div class="products-wrap__wrapper">
+          <img class="products-wrap__wrapper__image" src="/images/Brown-Almonds.png" alt="">
+          <div class="products-wrap__wrapper__block">
+            <h3 class="products-wrap__wrapper__title">Brown Almonds</h3>
+            <p class="products-wrap__wrapper__description">$11.00</p>
+
+            <div class="button-star">
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+            </div>
+
+            <button class="products__btn" type="submit">SHOP NOW</button>
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- finish products -->
+
+  <section id="fruits">
+    <div class="container">
+      <div class="fruits">
+        <div class="fruits-wrap">
+
+          <p class="fruits-wrap__description">Save up to 50%</p>
+          <h3 class="fruits-wrap__title">THE BLUEPRINTTO HEALTH</h3>
+          <button class="fruits-wrap__btn" type="submit">BUY NOW</button>
+
+        </div>
+
+        <div class="fruits-intro">
+
+          <p class="fruits-intro__description">offer 30% discount</p>
+          <h3 class="fruits-intro__title">FRUITS & VEGETABLES</h3>
+          <button class="fruits-intro__btn" type="submit">BUY NOW</button>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- finish fruits -->
+
+  <section id="vegetables">
+    <div class="container">
+      <h2 class="vegetables__title">Featured Products</h2>
+      <div class="vegetables-wrap">
+        <div class="vegetables-wrap__wrapper">
+          <img class="vegetables-wrap__wrapper__image wrapper-image" src="/images/vegetables-l.png" alt="">
+
+          <div class="vegetables__button">
+            <button class="button">
+              <i class="fa-regular fa-retweet"></i>
+            </button>
+            <button class="button">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <button class="button">
+              <i class="fa-regular fa-retweet"></i>
+            </button>
+
+          </div>
+
+          <div class="vegetables-wrap__wrapper__block">
+            <h3 class="vegetables-wrap__wrapper__title">Red Pepper</h3>
+            <p class="vegetables-wrap__wrapper__description">$10.00 - $20.00</p>
+
+
+
+            <div class="button-star__vegetables">
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+
+            </div>
+
+            <button class="vegetables__btn" type="submit">SHOP NOW</button>
+          </div>
+
+        </div>
+
+        <div class="vegetables-wrap__wrapper">
+          <img class="vegetables-wrap__wrapper__image" src="/images/vegetables.png" alt="">
+
+          <div class="vegetables-wrap__wrapper__block">
+            <h3 class="vegetables-wrap__wrapper__title">Cabbage</h3>
+            <p class="vegetables-wrap__wrapper__description">
+              <strike class="strike">$30.00</strike> - $15.00
+            </p>
+
+            <div class="button-star__vegetables">
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-regular fa-star"></i>
+              </button>
+
+            </div>
+            <button class="vegetables__btn" type="submit">SHOP NOW</button>
+          </div>
+
+        </div>
+
+        <div class="vegetables-wrap__wrapper">
+          <img class="vegetables-wrap__wrapper__image" src="/images/vegetables-r.png" alt="">
+
+          <div class="vegetables-wrap__wrapper__block">
+            <h3 class="vegetables-wrap__wrapper__title">Tomato</h3>
+            <p class="vegetables-wrap__wrapper__description">$15.00</p>
+
+            <div class="button-star__vegetables">
+
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-star"></i>
+              </button>
+
+            </div>
+
+            <button class="vegetables__btn" type="submit">SHOP NOW</button>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="vegetables-button">
+        <button class="vegetables-button__left" type="submit">
+          <img src="/images/Vector-l.png" alt="">
+        </button>
+        <button class="vegetables-button__right" type="submit">
+          <img src="/images/Vector.png" alt="">
+        </button>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- finish vegetables -->
+
+  <section id="intro">
+    <div class="container">
+      <div class="statistics">
+        <lu class="statistics__items">
+          <li class="statistics__item">
+            <h3 class="statistics__title">1570+</h3>
+            <p class="statistics__description">Total Products</p>
+          </li>
+          <li class="statistics__item">
+            <h3 class="statistics__title">3560+</h3>
+            <p class="statistics__description">Satisfied Clients</p>
+          </li>
+          <li class="statistics__item">
+            <h3 class="statistics__title">4550+</h3>
+            <p class="statistics__description">Project Completed</p>
+          </li>
+          <li class="statistics__item">
+            <h3 class="statistics__title">130+</h3>
+            <p class="statistics__description">Awards Winning</p>
+          </li>
+        </lu>
+      </div>
+    </div>
+
+    <img class="intro-bc__image" src="/images/intro_bc.png" width="485" height="740" alt="">
+
+    <img class="intro-image" src="/images/testimonials.png"
+      srcset="/images/testimonials.png 1x , /images/testimonials@2x.png 2x" alt="">
+
+
+    <div class="intro-wrap">
+      <blockquote class="intro-wrap__blockquote">
+        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam.”
+      </blockquote>
+
+      <img class="intro-wrap__image" src="/images/hamid-tajik.png" alt="">
+
+      <h3 class="intro-wrap__title">Alison Parker</h3>
+      <p class="intro-wrap__description">Product Manager</p>
+
+      <div class="button-star__intro">
+        <button class="btn">
+          <i class="fa-solid fa-star"></i>
+        </button>
+        <button class="btn">
+          <i class="fa-solid fa-star"></i>
+        </button>
+        <button class="btn">
+          <i class="fa-solid fa-star"></i>
+        </button>
+        <button class="btn">
+          <i class="fa-solid fa-star"></i>
+        </button>
+        <button class="btn">
+          <i class="fa-solid fa-star"></i>
+        </button>
+
+      </div>
+
+      <div class="ellipse">
+        <i class="fa-regular fa-circle"></i>
+        <i class="fa-regular fa-circle ellipse__btn"></i>
+        <i class="fa-regular fa-circle"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- finish intro -->
+
+  <section id="latest">
+    <div class="container">
+      <h2 class="latest__title">LATEST BLOG</h2>
+      <div class="latest">
+        <div class="latest-block">
+          <img class="latest-block__img" src="/images/latest.png" alt="">
+          <div class="latest-wrap">
+            <div class="latest-wrap__wrap">
+              <span class="latest-wrap__wrap__span">By: Admin</span>
+              <span class="latest-wrap__wrap__span">Services</span>
+              <span class="latest-wrap__wrap__span">04 Comment</span>
+            </div>
+
+            <h3 class="latest-wrap__title frist_title">Common engine oil problems and solutions</h3>
+
+            <div class="latest-wrap__intro">
+              <span class="latest-wrap__intro__span">August 27, 2021</span>
+              <button class="latest__read-more">READ MORE</button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="latest-block">
+          <img class="latest-block__img" src="/images/latest2.png" alt="">
+          <div class="latest-wrap">
+            <div class="latest-wrap__wrap">
+              <span class="latest-wrap__wrap__span">By: Admin</span>
+              <span class="latest-wrap__wrap__span">Services</span>
+              <span class="latest-wrap__wrap__span">04 Comment</span>
+            </div>
+
+            <h3 class="latest-wrap__title">How and when to replace brack rotors</h3>
+
+            <div class="latest-wrap__intro">
+              <span class="latest-wrap__intro__span">August 27, 2021</span>
+              <button class="latest__read-more">READ MORE</button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="latest-block">
+          <img class="latest-block__img" src="/images/latest3.png" alt="">
+          <div class="latest-wrap">
+            <div class="latest-wrap__wrap">
+              <span class="latest-wrap__wrap__span">By: Admin</span>
+              <span class="latest-wrap__wrap__span">Services</span>
+              <span class="latest-wrap__wrap__span">04 Comment</span>
+            </div>
+
+            <h3 class="latest-wrap__title">Elenance, Services
+              and repirs</h3>
+
+            <div class="latest-wrap__intro">
+              <span class="latest-wrap__intro__span">August 27, 2021</span>
+              <button class="latest__read-more">READ MORE</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="sletter">
+
+        <div class="sletter-wrap">
+          <img class="sletter-img" src="/images/image.png" srcset="/images/image.png 1x , /images/image@2x.png 2x"
+            alt="">
+          <h2 class="sletter-wrap__title">Subscribe To Newsletter</h2>
+          <form class="sletter-wrap__form">
+            <label class="sletter-wrap__label">
+              <input class="sletter-wrap__input" type="email" placeholder="Enter your email address...">
+              <button class="sletter-wrap__btn">SUBSCRIBE NOW</button>
+            </label>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- finish latest -->
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer">
+        <div class="footer-site">
+          <img class="footer-site__logo" src="/images/footer-logo.png" alt="">
+          <p class="footer-site__description">
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+            some form.
+          </p>
+
+          <div class="footer-site__links">
+            <a class="footer-site__link" href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a class="footer-site__link " href="#">
+              <i class="fa-brands fa-twitter tw-icon"></i>
+            </a>
+            <a class="footer-site__link" href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="footer-site__link" href="#">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="footer-wrap">
+          <h3 class="footer-wrap__title">Quick Link</h3>
+
+          <ul class="footer-wrap__items">
+            <li class="footer-wrap__item">
+              <a class="footer-wrap__item__link" href="index.html">Home</a>
+            </li>
+            <li class="footer-wrap__item">
+              <a class="footer-wrap__item__link" href="#">Featured</a>
+            </li>
+            <li class="footer-wrap__item">
+              <a class="footer-wrap__item__link" href="#">About Us</a>
+            </li>
+            <li class="footer-wrap__item">
+              <a class="footer-wrap__item__link" href="#">Product</a>
+            </li>
+            <li class="footer-wrap__item">
+              <a class="footer-wrap__item__link" href="#">Blog</a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="footer-blog">
+          <h3 class="footer-blog__title">Blog Post</h3>
+
+          <div class="footer-blog__block">
+            <img class="footer-blog__img" src="/images/footer-blog.png" alt="">
+            <div class="footer-blog__wrap">
+              <h4 class="footer-blog__wrap__title">Choosing Plants For Water Conservation</h4>
+
+              <p class="footer-blog__wrap__description">August 27, 2021</p>
+
+            </div>
+          </div>
+
+          <div class="footer-blog__block">
+            <img class="footer-blog__img" src="/images/footer-blog2.png" alt="">
+            <div class="footer-blog__wrap">
+              <h4 class="footer-blog__wrap__title">Choosing Plants For Water Conservation</h4>
+
+              <p class="footer-blog__wrap__description">August 27, 2021</p>
+
+            </div>
+          </div>
+
+          <div class="footer-blog__block">
+            <img class="footer-blog__img" src="/images/footer-blog3.png" alt="">
+            <div class="footer-blog__wrap">
+              <h4 class="footer-blog__wrap__title">Choosing Plants For Water Conservation</h4>
+
+              <p class="footer-blog__wrap__description">August 27, 2021</p>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="footer-info">
+          <h3 class="footer-info__title">Officeal Info</h3>
+          <address class="footer-info__address">
+            30 Commercial Road Fratton, Australia
+          </address>
+
+          <a class="footer-info__tel" href="1-888-452-1829">1-888-452-1829</a>
+
+          <h3 class="open-hours">Open Hours:</h3>
+          <p class="open-hours__desription">
+            Mon – Sat: 8 am – 5 pm,Sunday: CLOSED
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    
+    <div class="footer-bottom">
+      <div class="container">
+       <div>
+        <cite class="footer-bottom__cite">Copyright © 2021, Orgamic. All Rights Reserved.</cite>
+       </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

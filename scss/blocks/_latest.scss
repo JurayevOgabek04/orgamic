@@ -1,0 +1,249 @@
+
+
+.latest__title{
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #191D28;
+}
+
+.latest{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.latest-block{
+    width: 30%;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    box-sizing: border-box;
+    box-shadow: 0px 16px 45px rgba(0, 0, 0, 0.1);
+}
+
+.latest-block__img{
+    width: 100%;
+}
+
+.latest-wrap{
+    padding: 30px 20px;
+}
+.latest-wrap__wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.latest-wrap__wrap__span{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 150%;
+    text-align: center;
+    color: #000000;
+}
+
+.latest-wrap__wrap__span:nth-child(1){
+    position: relative;
+    margin-left: 15px;
+    &::before{
+        position: absolute;
+        content: "";
+        background-image: url(/images/by-admin.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 11px;
+        height: 14px;
+        left: -15px;
+    }
+}
+
+.latest-wrap__wrap__span:nth-child(2){
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        background-image: url(/images/services.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 13px;
+        height: 14px;
+        left: -20px;
+    }
+}
+
+.latest-wrap__wrap__span:nth-child(3){
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        background-image: url(/images/commit.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 14px;
+        height: 14px;
+        left: -20px;
+    }
+}
+
+.latest-wrap__title{
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 150%;
+    color: #000000;
+    
+}
+
+.frist_title{
+    color: #76A713;
+}
+
+.latest-wrap__intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #DDDDDD;
+    padding-top: 18px;
+}
+
+.latest-wrap__intro__span{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 150%;
+    color: #000000;
+    position: relative;
+    margin-left: 20px;
+    &::before{
+        position: absolute;
+        content: "";
+        background-image: url(/images/kalendar.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 13px;
+        height: 14px;
+        left: -20px;
+
+    }
+}
+
+.latest__read-more{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 150%;
+    color: #76A713;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    &::after{
+        position: absolute;
+        content: "";
+        background-image: url(/images/strelka.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 6px;
+        height: 10px;
+        right: -6px;
+        top: 6px;
+    }
+}
+
+
+
+
+
+
+// sletter
+
+
+.sletter{
+    position: relative;
+    top: 130px;
+    
+    
+
+
+}
+.sletter-img{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: -130px;
+    left: -70px;
+}
+
+.sletter-wrap{
+    position: relative;
+    background-color: #76A713;
+   
+}
+.sletter-wrap__title{
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 89px;
+    color: #FFFFFF;
+    text-align: right;
+    padding-top: 50px;
+    padding-right: 100px;
+}
+.sletter-wrap__title{
+    position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            background-image: url(/images/seletter-v.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 60px;
+            height: 55px;
+            left: 530px;
+            top: 130px;
+        }
+    
+}
+.sletter-wrap__label{
+    display: flex;
+    justify-content: end;
+    margin-right: 100px;
+    padding-bottom: 50px;
+}
+
+.sletter-wrap__input{
+    background-color: transparent;
+    width: 370px;
+    border: none;
+    border-bottom: 1px solid #9AD523;
+}
+
+.sletter-wrap__input::placeholder{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.sletter-wrap__btn{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    color: #FFFFFF;
+    padding: 10px 12px;
+    background-color: #FF6600;
+    margin-left: 50px;
+}

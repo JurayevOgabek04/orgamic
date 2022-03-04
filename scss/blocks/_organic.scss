@@ -1,0 +1,232 @@
+#organic{
+    position: relative;
+    margin-top: 200px;
+    padding-bottom: 100px;
+}
+
+// organic intro
+
+.organic__intro{
+    height: 200px;
+    width: 1300px;
+    position: absolute;
+    padding-top: 70px;
+    background-color: #FFFFFF;
+    border: 1.5px solid #DDDDDD;
+    padding-right: 40px;
+    top: -300px;
+}
+.organic__intro__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.organic__intro__item + .organic__intro__item{
+    border-left: 1px solid #DDDDDD;
+    padding-left: 120px;
+    
+
+}
+.organic__intro__title{
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 6px;
+}
+
+.organic__intro__description{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #666666;
+    margin: 0;
+}
+
+.organic__intro__item:nth-child(1){
+    margin-left: 80px;
+    position: relative;   
+    &::before{
+        position: absolute;
+        content: "";
+        background-image: url(/images/icon1.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 60px;
+        height: 41px;
+        left: -100px;
+        top: 5px;
+    }
+}
+
+.organic__intro__item:nth-child(2){   
+    position: relative;    
+    &::before{
+        position: absolute;
+        content: "";
+        background-image: url(/images/icon2.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 60px;
+        height: 60px;
+        left: 30px;
+        top: 5px;
+    }
+}
+
+.organic__intro__item:nth-child(3){
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        background-image: url(/images/icon3.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 60px;
+        height: 55px;
+        left: 30px;
+        top: 5px;
+    }
+}
+
+.organic__intro__item:nth-child(4){
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        background-image: url(/images/icon4.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 60px;
+        height: 60px;
+        left: 30px;
+        top: 5px;
+    }
+}
+
+
+
+// organic wrap
+.organic__wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.organic__wrap__image{
+    width: 300px; 
+    height: 490px; 
+
+}
+// organic wrap intro
+.organic__wrap__intro{
+    width: 270px;
+}
+
+.organic__wrap__intro__img{
+    width: 270px;
+    height: 338px;
+}
+.organic__wrap__into__text{
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 44px;
+    letter-spacing: 0.03em;
+    color: #76A713;
+    width: 100%;
+    text-align: center;
+    border: 1.5px dashed rgba(118, 167, 19, 0.5);
+    padding: 10px 41px;
+    margin: 0;
+    margin-top: 30px;
+
+}
+
+// organic wrap hero
+
+.organic__wrap__hero{
+    width: 650px;
+}
+
+.organic__wrap__hero__title{
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 89px;
+    text-transform: uppercase;
+    color: #191D28;
+    margin: 0;
+
+
+    
+}
+
+.organic__wrap__hero__description{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #888888;
+    margin-top: 40px;
+    
+}
+
+.organic__wrap__hero__text{
+    font-family: Gilroy;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #AAAAAA;
+    width: 468px;
+    margin: 0;
+    margin-bottom: 7px;
+    border-left: 2px solid #76A713;
+    padding-left: 19px;
+    position: relative;
+    &::after{
+        position: absolute;
+        content: "";
+        background-image: url(/images/Group.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 30px;
+        height: 20px;
+        top: 30px;
+        right: 90px;
+    }
+}
+
+.organic__wrap__hero__strong{
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    color: #000000;
+   
+    margin: 0;
+}
+
+.organic__wrap__hero__substrong{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 140%;
+    color: #AAAAAA;
+    margin: 0;
+   
+}

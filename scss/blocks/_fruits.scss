@@ -1,0 +1,113 @@
+#fruits{
+    margin-top: 100px;
+    
+}
+
+.fruits{
+    display: flex;
+}
+.fruits-wrap{
+    background-image: url(/images/fruits-left.png);
+    background-position: left 0 bottom 0;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-color: #76A713;
+    text-align: right;
+    padding: 40px;
+    width: 50%;
+    
+    
+    
+}
+  
+.fruits-wrap__description{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    
+
+}
+
+.fruits-wrap__title{
+    display: flex;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 59px;
+    text-align: right;
+    color: #FFFFFF;
+    margin: 0;
+    width: 400px;
+    margin-left: auto;
+    
+
+    
+}
+.fruits-wrap__btn{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 18px 11px 19px;
+    background-color: #FF6600;
+    margin-top: 30px;
+}
+
+
+
+.fruits-intro{
+    background-image: url(/images/fruits.png);
+    background-repeat: no-repeat;
+    background-position: left 0 bottom 0;
+    background-color: #FF6600;
+    background-size: 60%;
+    text-align: right;
+    padding-right: 40px;
+    width: 50%;
+    padding: 40px;
+}
+
+.fruits-intro__description{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.fruits-intro__title{
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 59px;
+    display: flex;
+    text-align: right;
+    color: #FFFFFF;
+    margin: 0;
+    margin-left: auto;
+    width: 300px;
+}
+
+.fruits-intro__btn{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 18px 11px 19px;
+    background-color: #76A713;
+    margin-top: 30px;
+}

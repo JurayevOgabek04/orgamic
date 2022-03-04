@@ -1,0 +1,129 @@
+#intro{
+    margin-top: 100px;
+    position: relative;
+    
+   
+}
+
+.statistics{
+    background-image: url(/images/intro-bg-img.png);
+    background-repeat: no-repeat;
+    background-color: #76A713;
+}
+
+.statistics__items{
+    display: flex;
+    list-style: none;
+
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.statistics__title{
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.statistics__description{
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 0;
+    padding-bottom: 50px;
+}
+
+.intro-image{
+    margin-top: 100px;
+}
+
+.intro-bc__image{
+    position: absolute;
+    right: 0;
+    top: 160px;
+}
+
+.intro-wrap{
+    width: 570px;
+    height: 400px;
+    position: absolute;
+    background: #FFFFFF;
+    bottom: 70px;
+    right: 120px;
+    box-shadow: 0px 20px 50px 2px rgba(0, 0, 0, 0.1);
+}
+
+.intro-wrap__image{
+    border-radius: 50%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.intro-wrap__blockquote{
+    font-family: Gilroy;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 170%;
+    text-align: center;
+    color: #AAAAAA;
+}
+
+.intro-wrap__title{
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 170%;
+    text-align: center;
+    color: #000000;
+}
+
+.intro-wrap__description{
+    
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 170%;
+    text-align: center;
+    color: #888888;
+}
+
+
+
+.btn + .btn{
+    margin-left: 10px;
+}
+
+.button-star__intro{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.ellipse{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+
+
+.ellipse__btn{
+    margin: 0 7px;
+    background-color: #76A713;
+    border-radius: 50%;
+    
+}
